@@ -119,3 +119,43 @@
     opacity: 1;
     transform: translate3d(0%, -30%, 100px);
   }
+
+  @media screen and (min-width: 375px) {
+  .card {
+    width: var(--card-width);
+    height: var(--card-height);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 46px;
+    perspective: 2500px;
+    margin: 0 5px;
+    margin-right: -160px;
+    margin-left: 140px;
+    margin-bottom: 100px;}
+
+    .wrapper {
+      transition: all 0.5s;
+      position: absolute;
+      width: 80%;
+      z-index: -1;}
+
+      .title {
+        width: 90%;
+        transition: transform 0.5s;}
+
+        .character {
+          width: 80%;
+          opacity: 0;
+          transition: all 0.5s;
+          position: absolute;
+          z-index: -1;}
+
+          .audio {
+            position: relative;
+            right: 45%;
+            bottom: -40%;}
+
+  
+}
